@@ -14,7 +14,7 @@ font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -149,14 +149,16 @@ nav {
     /*delay of 200ms*/
 }
 
-@keyframes animate_pfp{
-    0%{
+@keyframes animate_pfp {
+    0% {
         transform: scale(0);
     }
-    80%{
+
+    80% {
         transform: scale(1.1);
     }
-    100%{
+
+    100% {
         transform: scale(1);
     }
 }
@@ -186,16 +188,17 @@ nav {
     padding: 0 16px;
 }
 
-.about_me-links{
+.about_me-links {
     animation: fade_up 600ms 800ms backwards;
 }
 
-@keyframes fade_up{
-    0%{
+@keyframes fade_up {
+    0% {
         opacity: 0;
         transform: translateY(40px);
     }
-    100%{
+
+    100% {
         opacity: 1;
         transform: translateY(0);
     }
@@ -215,16 +218,17 @@ nav {
     animation: fade_in 1200ms 800ms backwards;
 }
 
-@keyframes fade_in{
-    0%{
+@keyframes fade_in {
+    0% {
         opacity: 0;
-    }    
-    100%{
+    }
+
+    100% {
         opacity: 1;
     }
 }
 
-i:hover{
+i:hover {
     opacity: 0.85;
 }
 
@@ -293,6 +297,7 @@ i:hover{
     box-shadow: 0 20px 80px rgba(0, 0, 0, 0.45);
     border-radius: 12px;
     overflow: hidden;
+    display: flex;
     position: relative;
 }
 
@@ -368,7 +373,7 @@ footer {
 }
 
 .footer_row {
-    padding: 8%;
+    padding: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -378,6 +383,7 @@ footer {
 .footer_logo-image {
     width: 100px;
     height: 100px;
+    transform: scale(1.2);
 }
 
 .footer_social-link,
@@ -385,14 +391,14 @@ footer {
     color: #fff;
 }
 
-.footer_social-list{
+.footer_social-list {
     width: 100%;
     max-width: 500px;
     display: flex;
     justify-content: space-around;
 }
 
-.footer_logo-popper{
+.footer_logo-popper {
     position: absolute;
     right: 0;
     top: 40px;
@@ -401,60 +407,70 @@ footer {
     transition: all 300ms ease;
 }
 
-.footer_anchor{
+.footer_anchor {
     margin-bottom: 20px;
     position: relative;
 }
 
-.footer_anchor:hover .footer_logo-popper{
-     transform: translateX(60px);
-     opacity: 1;
+.footer_anchor:hover .footer_logo-popper {
+    transform: translateX(40px);
+    opacity: 1;
 }
 
-@media (max-width: 768px){
-    nav{
+@media (max-width: 768px) {
+    nav {
         height: 68px;
     }
-    h1{
+
+    h1 {
         font-size: 28px;
     }
-    .about_me_info-para{
+
+    .about_me_info-para {
         font-size: 18px;
     }
-    .language{
+
+    .language {
         width: calc(100% / 3);
     }
-    .project_description-para{
+
+    .project_description-para {
         font-size: 14px;
     }
-    .project_description{
+
+    .project_description {
         left: 30px;
         padding-right: 30px;
     }
 }
 
-@media (max-width: 480px){
-    .nav_link:not(:last-child){
+@media (max-width: 480px) {
+    .nav_link:not(:last-child) {
         display: none;
     }
-    .project_description{
+
+    .project_description {
         padding: 0;
         left: 0;
         width: 100%;
     }
-    .project_description-para{
+
+    .project_description-para {
         display: none;
     }
-    .project_description-links{
+
+    .project_description-links {
         display: flex;
         justify-content: center;
     }
-    .project_description-title{
+
+    .project_description-title {
         font-size: 32px;
         line-height: 1;
         text-align: center;
     }
-    .project_description-subtitle{
+
+    .project_description-subtitle {
         text-align: center;
         margin: 12px 0;
     }
