@@ -357,6 +357,11 @@ i:hover {
     text-decoration: none;
 }
 
+.project_description-sublink{
+    color: #f8f8f8;
+    text-decoration: underline;
+}
+
 .project_description-title,
 .project_description-subtitle,
 .project_description-para,
