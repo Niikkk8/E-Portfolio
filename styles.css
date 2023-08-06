@@ -440,6 +440,7 @@ i:hover {
     transform: scale(0);
     transition: all 300ms ease;
     width: 200%;
+        text-align: center;
 }
 
 .modal_contact{
@@ -785,9 +786,6 @@ footer {
     }
     .modal_half{
         width: 100%;
-    }
-    .language_name{
-        text-align: center;
     }
 }
 
