@@ -440,7 +440,7 @@ i:hover {
     transform: scale(0);
     transition: all 300ms ease;
     width: 200%;
-        text-align: center;
+    text-align: center;
 }
 
 .modal_contact{
