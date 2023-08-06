@@ -1,14 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Josefin+Sans:wght@300;500;700&family=Kanit:wght@300;500&family=Lato:wght@400;700;900&family=Poppins:wght@300;500;700&display=swap');
-/*
-font-family: 'Inter', sans-serif;
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Kanit', sans-serif;
-font-family: 'Lato', sans-serif;
-font-family: 'Poppins', sans-serif;
-*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
 * {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -23,8 +16,7 @@ h2,
 h3,
 h4,
 h5,
-h6,
-span {
+h6{
     color: #242424;
     text-align: center;
     line-height: 1.25;
@@ -33,6 +25,19 @@ span {
 p {
     line-height: 1.5;
     font-size: 16px;
+}
+
+.click {
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+.click:hover {
+    transform: scale(1.1);
+}
+
+.click:active {
+    transform: scale(0.9);
 }
 
 li {
@@ -72,8 +77,89 @@ section:nth-child(even) {
 
 .section_title {
     margin-bottom: 20px;
+    font-size: 24px;
 }
 
+button {
+    cursor: pointer;
+}
+
+input, textarea{
+    width: 100%;
+    background-color: #242424;
+    color: white;
+    outline: none;
+    border: 2px solid #c0c4cc;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 40px;
+    transition: all 300ms ease;
+}
+
+textarea{
+    resize: vertical;
+    height: 100px;
+    margin-top: 8px;
+}
+
+input:hover, textarea:hover{
+    border-color: #dcdfe6;
+}
+
+input:focus, textarea:active{
+    background-color: #242424;
+    border-color: #7c3ee7;
+}
+
+label{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+nav,
+.about_me-info{
+    opacity: 1;
+    visibility: visible;
+    transition: all 600ms 400ms;
+}
+
+.modal-open nav,
+.modal-open .about_me-info{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 400ms;
+}
+
+.dark-theme .about_me_info-title,
+.dark-theme .about_me_info-para,
+.dark-theme .nav_link-anchor,
+.dark-theme .section_title,
+.dark-theme .fa-linkedin,
+.dark-theme .fa-github,
+.dark-theme .fa-artstation,
+.dark-theme .fa-file,
+.dark-theme .fa-adjust{
+    color: #f8f8f8;
+}
+
+.dark-theme .link_hover-effect-black:after{
+    background-color: white;
+}
+
+.dark-theme .personal_logo{
+    filter: invert(0);
+}
+
+.dark-theme section{
+    background-color: #242424;
+}
+
+.dark-theme .mail_button{
+    background-color: white;
+    color: #242424;
+}
 
 /*NAVIGATION BAR*/
 
@@ -111,10 +197,36 @@ nav {
 }
 
 .personal_logo {
-    font-size: 28px;
-    color: #6030b1;
-    margin: 0 12px;
-    font-weight: 900;
+    height: 60px;
+    width: 75px;
+    filter: invert(1);
+}
+
+.link_hover-effect {
+    position: relative;
+}
+
+.link_hover-effect::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    height: 2px;
+    width: 0;
+    right: 0;
+    transition: all 300ms ease;
+}
+
+.link_hover-effect-black:after {
+    background-color: #242424;
+}
+
+.link_hover-effect-white:after {
+    background-color: #f8f8f8;
+}
+
+.link_hover-effect:hover:after {
+    left: 0;
+    width: 100%;
 }
 
 /*ABOUT ME*/
@@ -144,6 +256,7 @@ nav {
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+    margin-top: 24px;
     margin-bottom: 28px;
     animation: animate_pfp 800ms 200ms backwards;
     /*delay of 200ms*/
@@ -171,6 +284,7 @@ nav {
 }
 
 .about_me_info-title {
+    font-size: 28px;
     margin-bottom: 16px;
     animation: fade_up 600ms 400ms backwards;
 }
@@ -232,9 +346,221 @@ i:hover {
     opacity: 0.85;
 }
 
-/*TECHNOLOGY STACK*/
+.mail_button {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    border-radius: 50%;
+    background-color: #242424;
+    color: white;
+    border: none;
+    position: fixed;
+    bottom: 32px;
+    right: 40px;
+    box-shadow: 0 12x 30px 0 rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
 
-.language {
+/* MODAL */
+
+.modal-open .modal{
+    z-index: 60;
+    box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.55);
+    visibility: visible;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 1100px;
+    height: 700px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    visibility: hidden;
+    z-index: -1;
+    transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
+}
+
+.modal_half{
+    width: 50%;
+    padding: 40px 72px;
+    position: relative;
+    transition: all 300ms ease-in;
+}
+
+.modal-open .modal_about,
+.modal-open .modal_contact
+{
+    transform: translate(0%);
+}
+
+.modal_about{
+    background-color: rgba(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(-110%);
+}
+
+.modal_languages{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal_language{
+    width: 23%;
+    padding: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 300ms ease;
+}
+
+.modal_language-image{
+    width: 100%;
+}
+
+.modal_language:hover{
+    filter: brightness(0.8);
+    transform: scale(0.85);
+}
+
+.modal_language:hover .language_name{
+    transform: scale(1);
+}
+
+.language_name{
+    position: absolute;
+    bottom: -14px;
+    transform: scale(0);
+    transition: all 300ms ease;
+    width: 200%;
+}
+
+.modal_contact{
+    background-color: #242424;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(110%);
+}
+
+.modal_title{
+    font-size: 26px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.modal_subtitle{
+    margin: 12px 0 18px 0;
+    text-align: left;
+    font-size: 16px;
+}
+
+.modal_para-about{
+    margin-bottom: 12px;
+    line-height: 1.75;
+}
+
+.modal_title-contact, .modal_subtitle-contact{
+    color: #f8f8f8;
+}
+
+.modal_subtitle-contact{
+    font-weight: 500;
+}
+
+.form_item{
+    margin-bottom: 20px;
+}
+
+.form_submit{
+    background-color: #6030b1;
+    border: 1px solid #7c3ee7;
+    color: white;
+    font-weight: bold;
+    max-width: 240px;
+    width: 100%;
+    padding: 12px 24px;
+    font-size: 20px
+}
+
+.form_submit:hover{
+    border-color: #f8f8f8;
+    background-color: transparent;
+}
+
+.form_submit:active{
+    border-color: #6030b1;
+    background-color: #6030b1;
+}
+
+.fa-spinner{
+    color: white;
+}
+
+.modal_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    display: none;
+}
+
+.modal_overlay-loading{
+    background-color: #242424;
+    font-size: 40px;
+}
+
+.modal_overlay-success{
+    background-color: #4bb543;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    padding: 24px;
+}
+
+.modal_overlay-visible{
+    z-index: 100;
+    display: flex;
+}
+
+.fa-spinner{
+    animation: spinner 750ms infinite;
+}
+
+@keyframes spinner {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.modal_exit{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: white;
+    font-size: 32px;
+    z-index: 100;
+}
+
+/* TECHNOLOGY STACK */
+
+/* .language {
     width: 25%;
     display: flex;
     justify-content: center;
@@ -276,7 +602,7 @@ i:hover {
 
 .language:hover .language_name {
     transform: scale(1);
-}
+} */
 
 /*PROJECTS*/
 
@@ -357,7 +683,7 @@ i:hover {
     text-decoration: none;
 }
 
-.project_description-sublink{
+.project_description-sublink {
     color: #f8f8f8;
     text-decoration: underline;
 }
@@ -425,6 +751,7 @@ footer {
 @media (max-width: 768px) {
     nav {
         height: 68px;
+        margin-bottom: 32px;
     }
 
     h1 {
@@ -446,6 +773,21 @@ footer {
     .project_description {
         left: 30px;
         padding-right: 30px;
+    }
+    .modal{
+        top: 0;
+        left: 0;
+        transform: none;
+        height: auto;
+        width: 100%;
+        flex-direction: column-reverse;
+        border-radius: 0;
+    }
+    .modal_half{
+        width: 100%;
+    }
+    .language_name{
+        text-align: center;
     }
 }
 
@@ -478,5 +820,8 @@ footer {
     .project_description-subtitle {
         text-align: center;
         margin: 12px 0;
+    }
+    .language_name{
+        font-size: 14px;
     }
 }

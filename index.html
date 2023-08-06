@@ -8,230 +8,241 @@
     <title>Niket's E-Portfolio</title>
     <link rel="stylesheet" href="./styles.css">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("txOgJb5589Z-naBt7");
+        })();
+    </script>
+    <script src="./script.js"></script>
 </head>
 
 <body>
-    <section id="about_me">
-        <nav>
-            <div class="personal_logo">
-                Niket Shah
-            </div>
-            <ul class="nav_link-list">
-                <li class="nav_link">
-                    <a href="#skills" class="nav_link-anchor link_hover-effect link_hover-effect-black">Skills</a>
-                </li>
-                <li class="nav_link">
-                    <a href="#projects" class="nav_link-anchor link_hover-effect link_hover-effect-black">Projects</a>
-                </li>
-                <li class="nav_link">
-                    <a href="mailto:shahniket643@gmail.com" class="nav_link-anchor nav_link-anchor-primary">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="flex-1">
-            <div class="about_me-info row">
-                <div class="about_me_info-container">
-                    <figure class="about_me_picture-mask">
-                        <img src="" class="about_me_picture" alt="My Picture">
-                    </figure>
-                    <h1 class="about_me_info-title">
-                        Hey, I'm <span class="text_purple">Niket!</span>
-                    </h1>
-                    <p class="about_me_info-para"> I'm a <strong class="text_purple">tech enthusiast</strong>,
-                        passionate about Programming, 3D-Modeling and Front-End Development. I love pushing boundaries,
-                        learning new things, and creating with code. Sharing my work with you is exciting, and I hope
-                        you enjoy exploring my portfolio!
-                    </p>
-                    <div class="about_me-links">
-                        <a href="https://www.linkedin.com/in/niket-shah-64713b243/" class="about_me-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/Niikkk8" class="about_me-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="mailto:shahniket643@gmail..com" class="about_me-link">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                        <a href="" class="about_me-link">
-                            <i class="far fa-file"></i>
-                        </a>
-                    </div>
-                </div>
-                <figure class="about_me-img-container">
-                    <img src="./assets/undraw_developer_activity_re_39tg.svg" class="about_me-img" alt="">
-                </figure>
-            </div>
-        </div>
-    </section>
-    <section id="skills">
-        <div class="container">
-            <div class="row">
-                <h1 class="section_title">This is my <span class="text_purple">Technology Stack</span></h1>
-                <div class="language_list">
-                    <div class="language">
-                        <figure class="language_image-wrapper">
-                            <img src="./assets/illustrator.png" class="language_image" alt="">
-                        </figure>
-                        <span class="language_name"> Adobe Illustrator</span>
-                    </div>
-                    <div class="language">
-                        <figure class="language_image-wrapper">
-                            <img src="./assets/photoshop.png" class="language_image" alt="">
-                        </figure>
-                        <span class="language_name">Adobe Photoshop</span>
-                    </div>
-                    <div class="language">
-                        <figure class="language_image-wrapper">
-                            <img src="./assets/premiere-pro.png" class="language_image" alt="">
-                        </figure>
-                        <span class="language_name">Adobe Premiere-Pro</span>
-                    </div>
-                    <div class="language">
-                        <figure class="language_image-wrapper">
-                            <img src="./assets/animate.png" class="language_image" alt="">
-                        </figure>
-                        <span class="language_name">Adobe Animate</span>
-                    </div>
-                    <div class="language">
-                        <figure class="language_image-wrapper">
-                            <img src="./assets/maya.png" class="language_image" alt="">
-                        </figure>
-                        <span class="language_name">Autodesk Maya</span>
-                    </div>
-                    <div class="language">
-                        <figure class="language_image-wrapper">
-                            <img src="./assets/zbrush.png" class="language_image" alt="">
-                        </figure>
-                        <span class="language_name">Zbrush</span>
-                    </div>
-                    <div class="language">
-                        <figure class="language_image-wrapper">
-                            <img src="./assets/substance-3d-painter.png" class="language_image" alt="">
-                        </figure>
-                        <span class="language_name">Adobe Substance Painter</span>
-                    </div>
-                    <div class="language">
-                        <figure class="language_image-wrapper">
-                            <img src="./assets/html.png" class="language_image" alt="">
-                        </figure>
-                        <span class="language_name">HTML5</span>
-                    </div>
-                    <div class="language">
-                        <figure class="language_image-wrapper">
-                            <img src="./assets/css-3.png" class="language_image" alt="">
-                        </figure>
-                        <span class="language_name">CSS3</span>
-                    </div>
-                    <div class="language">
-                        <figure class="language_image-wrapper">
-                            <img src="./assets/js.png" class="language_image" alt="">
-                        </figure>
-                        <span class="language_name">JavaScript</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="projects">
-        <div class="container">
-            <div class="row">
-                <h1 class="section_title">Here are some of my <span class="text_purple">Projects</span></h1>
-                <ul class="project_list">
-                    <li class="project">
-                        <div class="project_wrapper">
-                            <img src="./assets/e-commerce_project.png" target="_blank" class="project_image" alt="">
-                            <div class="project_description">
-                                <h3 class="project_description-title">E-Commerce Website</h3>
-                                <h4 class="project_description-subtitle">HTML5, CSS3, JavaScript</h4>
-                                <p class="project_description-para">Dream Builds depicts a basic wireframe of an
-                                    e-commerce website.
-                                </p>
-                                <div class="project_description-links">
-                                    <a href="https://github.com/Niikkk8/e-commercewebpage" target="_blank"
-                                        class="project_description-link">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                    <a href="https://niikkk8.github.io/e-commercewebpage" target="_blank"
-                                        class="project_description-link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+    <section id="landing_page">
+        <section id="about_me">
+            <nav>
+                <img src="./assets/mylogo.png" alt="" class="personal_logo">
+                <ul class="nav_link-list">
+                    <li class="nav_link">
+                        <a href="#" class="nav_link-anchor link_hover-effect link_hover-effect-black"
+                            onclick="toggleModal()">About</a>
                     </li>
-                    <li class="project">
-                        <div class="project_wrapper">
-                            <img src="./assets/treact_clone-project.png" target="_blank" class="project_image" alt="">
-                            <div class="project_description">
-                                <h3 class="project_description-title">Treat template clone</h3>
-                                <h4 class="project_description-subtitle">HTML5, CSS3, JavaScript</h4>
-                                <p class="project_description-para">This website was made to master the basic principles
-                                    of HTML5, CSS and JavaScript. It is a clone of <a
-                                        href="https://treact.owaiskhan.me/components/landingPages/SaaSProductLandingPage"
-                                        class="project_description-sublink">a treact template.</a>
-                                </p>
-                                <div class="project_description-links">
-                                    <a href="https://github.com/Niikkk8/Treat-Clone" target="_blank"
-                                        class="project_description-link">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                    <a href="https://niikkk8.github.io/Treat-Clone/" target="_blank"
-                                        class="project_description-link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                    <li class="nav_link">
+                        <a href="#projects"
+                            class="nav_link-anchor link_hover-effect link_hover-effect-black">Projects</a>
                     </li>
-                    <li class="project">
-                        <div class="project_wrapper">
-                            <img src="./assets/hubble_project.jpg" target="_blank" class="project_image" alt="">
-                            <div class="project_description">
-                                <h3 class="project_description-title">30 Years of Hubble</h3>
-                                <h4 class="project_description-subtitle">HTML5, CSS3</h4>
-                                <p class="project_description-para">Lorem ipsum dolor sit amet consectetur, adipisicing
-                                    elit. Sequi, quos! Laborum vero voluptatum facilis atque aut iusto, deserunt
-                                    possimus quis praesentium fuga, earum incidunt quaerat molestiae quam impedit, error
-                                    amet.
-                                </p>
-                                <div class="project_description-links">
-                                    <a href="" class="project_description-link">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                    <a href="" target="_blank" class="project_description-link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                    <li class="nav_link">
+                        <a href="#" class="nav_link-anchor nav_link-anchor-primary" onclick="toggleModal()">Contact</a>
+                    </li>
+                    <li class="nav_link click" onclick="toogleContrast()">
+                        <a href="#" class="nav_link-anchor link_hover-effect link_hover-effect-black">
+                            <i class="fas fa-adjust"></i>
+                        </a>
                     </li>
                 </ul>
+            </nav>
+            <div class="flex-1">
+                <div class="about_me-info row">
+                    <div class="about_me_info-container">
+                        <figure class="about_me_picture-mask">
+                            <img src="" class="about_me_picture" alt="My Picture">
+                        </figure>
+                        <h1 class="about_me_info-title">
+                            Hey, I'm <span class="text_purple">Niket!</span>
+                        </h1>
+                        <p class="about_me_info-para"> I'm a <strong class="text_purple">tech enthusiast</strong>,
+                            passionate about 3D-Modeling and Front-End Development.
+                            <br>
+                            <!--</strong> I love <strong class="text_purple">pushing boundaries</strong>,
+                            learning new things, and creating with code. Sharing my work with you is exciting, and I
+                            hope you enjoy exploring my portfolio! -->
+                            Here's a bit more <a href="#" onclick="toggleModal()"><strong
+                                    class="text_purple click">about
+                                    me.</strong></a>
+                        </p>
+                        <div class="about_me-links">
+                            <a href="https://www.linkedin.com/in/niket-shah-64713b243/" target="_blank"
+                                class="about_me-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/Niikkk8" target="_blank" class="about_me-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.artstation.com/niketshah3" target="_blank" class="about_me-link">
+                                <i class="fab fa-artstation"></i>
+                            </a>
+                            <a href="" class="about_me-link">
+                                <i class="far fa-file"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <figure class="about_me-img-container">
+                        <img src="./assets/undraw_developer_activity_re_39tg.svg" class="about_me-img" alt="">
+                    </figure>
+                </div>
+                <div class="modal">
+                    <div class="modal_half modal_about">
+                        <h3 class="modal_title modal_title-about">Here's a bit about me!</h3>
+                        <h4 class="modal_subtitle modal_subtitle-about">Student</h4>
+                        <p class="moda_para-about">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est,
+                            officia eum quas vitae eaque aperiam? <br> Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Sint rem, reprehenderit quis nihil sunt aspernatur?
+                        </p>
+                        <div class="modal_languages">
+                            <figure class="modal_language">
+                                <img src="./assets/photoshop.png" class="modal_language-image alt="">
+                                <span class=" language_name">Photoshop</span>
+                            </figure>
+                            <figure class="modal_language">
+                                <img src="./assets/premiere-pro.png" class="modal_language-image alt="">
+                                <span class=" language_name">Premiere-Pro</span>
+                            </figure>
+                            <figure class="modal_language">
+                                <img src="./assets/maya.png" class="modal_language-image alt="">
+                                <span class=" language_name">Maya</span>
+                            </figure>
+                            <figure class="modal_language">
+                                <img src="./assets/zbrush.png" class="modal_language-image alt="">
+                                <span class=" language_name">Zbrush</span>
+                            </figure>
+                            <figure class="modal_language">
+                                <img src="./assets/substance-3d-painter.png" class="modal_language-image alt="">
+                                <span class=" language_name">Substance-3d-Painter</span>
+                            </figure>
+                            <figure class="modal_language">
+                                <img src="./assets/html.png" class="modal_language-image alt="">
+                                <span class=" language_name">HTML5</span>
+                            </figure>
+                            <figure class="modal_language">
+                                <img src="./assets/css-3.png" class="modal_language-image alt="">
+                                <span class=" language_name">CSS3</span>
+                            </figure>
+                            <figure class="modal_language">
+                                <img src="./assets/js.png" class="modal_language-image alt="">
+                                <span class=" language_name">JavaScript</span>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="modal_half modal_contact">
+                        <h3 class="modal_title modal_title-contact">Let's have a chat!</h3>
+                        <h4 class="modal_subtitle modal_subtitle-contact">I'm currently open to new opportunities.</h4>
+                        <form id="contact_form" onsubmit="contact(event)">
+                            <div class="form_item">
+                                <label class="form_item-label">Name</label>
+                                <input type="text" class="input" name="user_name" required autocomplete="off"></input>
+                            </div>
+                            <div class="form_item">
+                                <label class="form_item-label">E-mail</label>
+                                <input type="email" class="input" name="user_email" required autocomplete="off"></input>
+                            </div>
+                            <div class="form_item">
+                                <label class="form_item-label">Message</label>
+                                <textarea type="text" class="input" name="message" required></textarea>
+                            </div>
+                            <button id="contact_submit" class="form_submit">Send it my way</button>
+                        </form>
+                        <div class="modal_overlay modal_overlay-loading">
+                            <i class="fas fa-spinner fa-2xs"></i>
+                        </div>
+                        <div class="modal_overlay modal_overlay-success">
+                            Thanks for the message! Looking forward to speaking with you soon!
+                        </div>
+                        <i class="fas fa-times modal_exit click" onclick="toggleModal()"></i>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+        <section id="projects">
+            <div class="container">
+                <div class="row">
+                    <h1 class="section_title">Here are some of my <span class="text_purple">Projects</span></h1>
+                    <ul class="project_list">
+                        <li class="project">
+                            <div class="project_wrapper">
+                                <img src="./assets/e-commerce_project.png" target="_blank" class="project_image" alt="">
+                                <div class="project_description">
+                                    <h3 class="project_description-title">E-Commerce Website</h3>
+                                    <h4 class="project_description-subtitle">HTML5, CSS3, JavaScript</h4>
+                                    <p class="project_description-para">Dream Builds depicts a basic wireframe of an
+                                        e-commerce website.
+                                    </p>
+                                    <div class="project_description-links">
+                                        <a href="https://github.com/Niikkk8/e-commercewebpage" target="_blank"
+                                            class="project_description-link">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                        <a href="https://niikkk8.github.io/e-commercewebpage" target="_blank"
+                                            class="project_description-link">
+                                            <i class="fas fa-link"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="project">
+                            <div class="project_wrapper">
+                                <img src="./assets/treact_clone-project.png" target="_blank" class="project_image"
+                                    alt="">
+                                <div class="project_description">
+                                    <h3 class="project_description-title">Treat template clone</h3>
+                                    <h4 class="project_description-subtitle">HTML5, CSS3, JavaScript</h4>
+                                    <p class="project_description-para">This website was made to master the basic
+                                        principles
+                                        of HTML5, CSS and JavaScript. It is a clone of <a
+                                            href="https://treact.owaiskhan.me/components/landingPages/SaaSProductLandingPage"
+                                            class="project_description-sublink">a treact template.</a>
+                                    </p>
+                                    <div class="project_description-links">
+                                        <a href="https://github.com/Niikkk8/Treact-Clone" target="_blank"
+                                            class="project_description-link">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                        <a href="https://niikkk8.github.io/Treact-Clone/" target="_blank"
+                                            class="project_description-link">
+                                            <i class="fas fa-link"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="row footer_row">
+                <a href="#" class="footer_anchor">
+                    <figure class="footer_logo">
+                        <img src="./assets/mylogo.png" class="footer_logo-image" alt="My Logo">
+                    </figure>
+                    <span class="footer_logo-popper">
+                        Top
+                        <i class="fas fa-arrow-up"></i>
+                    </span>
+                </a>
+                <div class="footer_social-list">
+                    <a href="https://github.com/Niikkk8"
+                        class="footer_social-link link_hover-effect link_hover-effect-white" target="_blank">GitHub</a>
+                    <a href="https://www.artstation.com/niketshah3"
+                        class="footer_social-link link_hover-effect link_hover-effect-white"
+                        target="_blank">ArtStation</a>
+                    <a href="https://www.linkedin.com/in/niket-shah-64713b243/"
+                        class="footer_social-link link_hover-effect link_hover-effect-white"
+                        target="_blank">LinkedIn</a>
+                    <a href="#" onclick="toggleModal()"
+                        class="footer_social-link link_hover-effect link_hover-effect-white">Email</a>
+                    <a href="" class="footer_social-link link_hover-effect link_hover-effect-white"
+                        target="_blank">Resume</a>
+                </div>
+            </div>
+        </footer>
+        <a href="#">
+            <button class="mail_button click" onclick="toggleModal()">
+                <i class="fas fa-envelope"></i>
+            </button>
+        </a>
     </section>
-    <footer>
-        <div class="row footer_row">
-            <a href="#" class="footer_anchor">
-                <figure class="footer_logo">
-                    <img src="./assets/mylogo.png" class="footer_logo-image" alt="My Logo">
-                </figure>
-                <span class="footer_logo-popper">
-                    Top
-                    <i class="fas fa-arrow-up"></i>
-                </span>
-            </a>
-            <div class="footer_social-list">
-                <a href="https://github.com/Niikkk8" class="footer_social-link link_hover-effect link_hover-effect-white"
-                    target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/niket-shah-64713b243/" class="footer_social-link link_hover-effect link_hover-effect-white"
-                    target="_blank">LinkedIn</a>
-                <a href="mailto:shahniket643@gmail.com"
-                    class="footer_social-link link_hover-effect link_hover-effect-white" target="_blank">Email</a>
-                <a href="" class="footer_social-link link_hover-effect link_hover-effect-white"
-                    target="_blank">Resume</a>
-            </div>
-        </div>
-    </footer>
 </body>
 
 </html>
