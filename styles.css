@@ -278,9 +278,7 @@ nav {
 
 .about_me_picture {
     width: 100%;
-    /*improving picture
-    to zoom in, transform: scale(1.5)
-    move the center to bottom padding-top: 8px*/
+    transform: scale(1.5);
 }
 
 .about_me_info-title {
