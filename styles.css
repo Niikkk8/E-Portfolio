@@ -406,6 +406,7 @@ i:hover {
 
 .modal_languages{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
