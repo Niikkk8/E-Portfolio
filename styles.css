@@ -278,8 +278,8 @@ nav {
 
 .about_me_picture {
     width: 100%;
-    /* transform: scale(1.8); */
-    /* transform: translateX(0px); */
+    /* transform: scale(1.8);
+    transform: translateX(0px); */
 }
 
 .about_me_info-title {
